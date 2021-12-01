@@ -5,7 +5,7 @@
   
 ### Author: Jonathan Scott @jonathandata1  
   
-## CURRENT VERSION 1.0  
+## CURRENT VERSION 1.1 
 0. Samsung Identification - AT Commands - Linux
 1. Samsung Identification - AT Commands - MacOS
 2. Pull All System APKs & Unpack Them - All Androids
@@ -15,6 +15,10 @@
 6. Run Secret Codes (Manual Selection) - All Androids - COMING SOON
 7. Bug Report Dump - All Androids - COMING SOON
 8. View Bug Report Data In GUI - All Androids - COMING SOON
+9. Instant Factory Reset - Samsung Devices - Linux
+10. Instant Factory Reset - Samsung Devices - MacOS
+11. Instant Factory Reset - LG Devices - Linux
+12. Instant Factory Reset - LG Devices - MacOS
   
   
   
@@ -22,7 +26,7 @@
   
 ![TyR Android Recon & Research Tools](https://i.postimg.cc/Ls7D9tGf/Untitled-design-Max-Quality-2021-11-30-T192018-583.jpg)  
   
-[![TyR Android Recon & Research Tools](https://i.postimg.cc/N0PJyq2K/Samsung-Device-ID-AT-Commands.gif)  
+![TyR Android Recon & Research Tools](https://i.postimg.cc/N0PJyq2K/Samsung-Device-ID-AT-Commands.gif)  
   
 ## Dependencies  
   ####  If you are on on a MacOS you will need to install brew package manager  

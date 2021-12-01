@@ -305,7 +305,7 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     }
 
     eight="View Bug Report Data In GUI - All Androids - COMING SOON"
-    seven(){
+    eight(){
 
         printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
         printf "%s\n${CYAN} RUNNING METHOD #8 - ${eight} ${NC}"
@@ -326,6 +326,110 @@ seven="Bug Report Dump - All Androids - COMING SOON"
 
         }
             method_8
+
+        pause
+    }
+
+    nine="Instant Factory Reset - Samsung Devices - Linux"
+    nine(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #9 - ${nine} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_9(){
+
+       echo "Coming Soon"
+
+
+        }
+            method_9
+
+        pause
+    }
+
+    ten="Instant Factory Reset - Samsung Devices - MacOS"
+    ten(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #10 - ${ten} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_10(){
+
+       echo "Coming Soon"
+
+
+        }
+            method_10
+
+        pause
+    }
+
+    eleven="Instant Factory Reset - LG Devices - Linux"
+    eleven(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #11 - ${eleven} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_11(){
+
+       echo "Coming Soon"
+
+
+        }
+            method_11
+
+        pause
+    }
+
+    twelve="Instant Factory Reset - LG Devices - MacOS"
+    twelve(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #12 - ${twelve} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_12(){
+
+       echo "Coming Soon"
+
+
+        }
+            method_12
 
         pause
     }
@@ -374,7 +478,7 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     printf "%s\n${PURPLE}-----------------------------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Brought To You By: Jonathan Scott -------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Updated On: 9/30/2021 --------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Version 1.0 -----------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Version 1.1 -----------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Android Recon & Research Tools -------------------------${NC}"
     printf "%s\n${PURPLE}##############################################################################################################################################################################${NC}"
 
@@ -396,14 +500,18 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     echo "6. ${six}"
     echo "7. ${seven}"
     echo "8. ${eight}"
-    echo "9. Exit"
+    echo "9. ${eight}"
+    echo "10. ${eight}"
+    echo "11. ${eight}"
+    echo "12. ${eight}"
+    echo "13. Exit"
 
     }
     # Read the user input
 
     read_options(){
       local choice
-      read -p "Enter choice [ 0 - 9 ] " choice
+      read -p "Enter choice [ 0 - 13 ] " choice
       case ${choice} in
         0) zero ;;
         1) one ;;
@@ -414,7 +522,11 @@ seven="Bug Report Dump - All Androids - COMING SOON"
         6) six ;;
         7) seven ;;
         8) eight ;;
-        9) exit 0;; #This will exit out of the application
+        9) nine ;;
+        10) ten ;;
+        11) eleven ;;
+        12) twelve ;;
+        13) exit 0;; #This will exit out of the application
 		*) printf "%s\n${RED}Error...Option Not Valid, Please Choose Another${NC}" && sleep 2
 	esac
 
