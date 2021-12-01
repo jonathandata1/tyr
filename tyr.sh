@@ -347,7 +347,7 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     }
         method_9(){
 
-       echo "Coming Soon"
+        sh "${__dir}"/android_tools/factory_reset_samsung_linux.sh
 
 
         }
@@ -373,7 +373,8 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     }
         method_10(){
 
-       echo "Coming Soon"
+        sh "${__dir}"/android_tools/factory_reset_samsung.sh
+
 
 
         }
@@ -399,7 +400,8 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     }
         method_11(){
 
-       echo "Coming Soon"
+       sh "${__dir}"/android_tools/factory_reset_lg_linux.sh
+
 
 
         }
@@ -425,11 +427,86 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     }
         method_12(){
 
-       echo "Coming Soon"
+        sh "${__dir}"/android_tools/factory_reset_lg.sh
 
 
         }
             method_12
+
+        pause
+    }
+    thirteen="Auto Enable ADB - Samsung - MacOS"
+    thirteen(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #13 - ${thirteen} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_13(){
+
+       sh "${__dir}"/android_tools/enable_adb_at_samsung.sh
+
+
+        }
+            method_13
+
+        pause
+    }
+    fourteen="Auto Enable ADB - Samsung - Linux"
+    fourteen(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #14 - ${fourteen} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_14(){
+
+       sh "${__dir}"/android_tools/enable_adb_at_samsung_linux.sh
+
+
+        }
+            method_14
+
+        pause
+    }
+    fifteen="Bypass FRP, MDM, Passcode (Use Auto Enable ADB Method First)"
+    fifteen(){
+
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        printf "%s\n${CYAN} RUNNING METHOD #15 - ${fifteen} ${NC}"
+        printf "%s\n${PURPLE}--------------------------------------------------------------${NC}"
+        double_space
+        trap ctrl_c INT
+
+          function ctrl_c() {
+            echo
+            echo "Ctrl-C Ended the Application"
+            # do the jobs
+            exit
+    }
+        method_15(){
+
+       sh "${__dir}"/android_tools/bypass_frp_mdm_passcode.sh
+
+
+        }
+            method_15
 
         pause
     }
@@ -477,8 +554,8 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     ${NC}"
     printf "%s\n${PURPLE}-----------------------------------------------------------------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Brought To You By: Jonathan Scott -------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Updated On: 9/30/2021 --------------------------------------${NC}"
-    printf "%s\n${PURPLE}-------------------------------------- Version 1.1 -----------------------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Updated On: 12/01/2021 --------------------------------------${NC}"
+    printf "%s\n${PURPLE}-------------------------------------- Version 1.2 -----------------------------------------------------${NC}"
     printf "%s\n${PURPLE}-------------------------------------- Android Recon & Research Tools -------------------------${NC}"
     printf "%s\n${PURPLE}##############################################################################################################################################################################${NC}"
 
@@ -504,14 +581,17 @@ seven="Bug Report Dump - All Androids - COMING SOON"
     echo "10. ${ten}"
     echo "11. ${eleven}"
     echo "12. ${twelve}"
-    echo "13. Exit"
+    echo "13. ${thirteen}"
+    echo "14. ${fourteen}"
+    echo "15. ${fifteen}"
+    echo "16. Exit"
 
     }
     # Read the user input
 
     read_options(){
       local choice
-      read -p "Enter choice [ 0 - 13 ] " choice
+      read -p "Enter choice [ 0 - 16 ] " choice
       case ${choice} in
         0) zero ;;
         1) one ;;
@@ -526,7 +606,10 @@ seven="Bug Report Dump - All Androids - COMING SOON"
         10) ten ;;
         11) eleven ;;
         12) twelve ;;
-        13) exit 0;; #This will exit out of the application
+        13) thirteen ;;
+        14) fourteen ;;
+        15) fifteen ;;
+        16) exit 0;; #This will exit out of the application
 		*) printf "%s\n${RED}Error...Option Not Valid, Please Choose Another${NC}" && sleep 2
 	esac
 
